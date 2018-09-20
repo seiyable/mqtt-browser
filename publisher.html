@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <form>
+      <input type="text" v-model="message"/>
+    </form>
+    <button @click="publish()">
+      Publish
+    </button>
+  </div>
+  <script src="./publisher.js"></script>
+</body>
+</html>
